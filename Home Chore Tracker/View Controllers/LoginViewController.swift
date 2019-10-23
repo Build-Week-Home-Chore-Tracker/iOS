@@ -17,28 +17,28 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
-    let orange = UIColor(displayP3Red: 220.0, green: 150.0, blue: 10.0, alpha: 1.0)
-    let blue = UIColor(displayP3Red: 5.0, green: 85.0, blue: 150.0, alpha: 1.0)
-    let green = UIColor(displayP3Red: 5.0, green: 175.0, blue: 80.0, alpha: 1.0)
+    let orange = UIColor(red: 220.0, green: 150.0, blue: 10.0, alpha: 1.0)
+    let blue = UIColor(red: 5.0, green: 85.0, blue: 150.0, alpha: 1.0)
+    let green = UIColor(red: 5.0, green: 175.0, blue: 80.0, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        updateViews()
+
     }
     
     func updateViews() {
         
         choreLabel.backgroundColor = green
-        choreLabel.layer.backgroundColor = green as! CGColor
+        choreLabel.layer.backgroundColor = green.cgColor
         choreLabel.layer.cornerRadius = 4
-        choreLabel.textColor = .white
+        choreLabel.textColor = .black
         
         userNameLabel.textColor = orange
         
         passwordLabel.textColor = orange
         
-        loginButton.layer.backgroundColor = green as! CGColor
+        loginButton.layer.backgroundColor = green.cgColor
         loginButton.layer.cornerRadius = 4
         
         

@@ -25,11 +25,93 @@
                         <segue destination="jsV-3w-ug5" kind="relationship" relationship="viewControllers" id="g95-kn-xLi"/>
                         <segue destination="dxv-lp-2K8" kind="relationship" relationship="viewControllers" id="1Va-m6-vq6"/>
                         <segue destination="nlh-kk-6Sn" kind="relationship" relationship="viewControllers" id="hJK-eA-BOZ"/>
+                        <segue destination="5LU-sr-Srj" kind="show" identifier="ShowLoginSegue" id="5n2-5e-V0k"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fml-Vd-4yb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="630" y="-258"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Lk3-67-AJn">
+            <objects>
+                <viewController id="5LU-sr-Srj" customClass="LoginViewController" customModule="Home_Chore_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t07-uk-OZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-Sq-LRH">
+                                <rect key="frame" x="135" y="225.5" width="144" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-4i-hoA">
+                                <rect key="frame" x="145" y="380.5" width="125" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0rc-2c-IFa">
+                                <rect key="frame" x="40" y="296.5" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ejJ-nJ-LG0">
+                                <rect key="frame" x="40" y="451.5" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chore Tracker  Please Sign In!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZF-G9-zSU">
+                                <rect key="frame" x="81.5" y="70" width="251.5" height="95.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0S-Ur-KDV">
+                                <rect key="frame" x="154.5" y="585.5" width="105" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="5LU-sr-Srj" eventType="touchUpInside" id="4o4-bn-4Av"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q0S-Ur-KDV" firstAttribute="centerX" secondItem="t07-uk-OZZ" secondAttribute="centerX" id="7td-cQ-pfo"/>
+                            <constraint firstItem="Q0S-Ur-KDV" firstAttribute="top" secondItem="ejJ-nJ-LG0" secondAttribute="bottom" constant="100" id="8QD-S9-FX2"/>
+                            <constraint firstItem="0rc-2c-IFa" firstAttribute="leading" secondItem="Lki-vt-z3r" secondAttribute="leading" constant="40" id="9il-iP-DgS"/>
+                            <constraint firstItem="jeq-4i-hoA" firstAttribute="top" secondItem="0rc-2c-IFa" secondAttribute="bottom" constant="50" id="AyW-Fr-PL0"/>
+                            <constraint firstItem="Lki-vt-z3r" firstAttribute="trailing" secondItem="ejJ-nJ-LG0" secondAttribute="trailing" constant="40" id="CWg-5v-014"/>
+                            <constraint firstItem="ejJ-nJ-LG0" firstAttribute="leading" secondItem="Lki-vt-z3r" secondAttribute="leading" constant="40" id="CX3-Vr-dkt"/>
+                            <constraint firstItem="9ZF-G9-zSU" firstAttribute="top" secondItem="Lki-vt-z3r" secondAttribute="top" constant="70" id="G3U-iU-vzc"/>
+                            <constraint firstItem="ejJ-nJ-LG0" firstAttribute="top" secondItem="jeq-4i-hoA" secondAttribute="bottom" constant="35" id="Lz9-Ap-4ki"/>
+                            <constraint firstItem="fWY-Sq-LRH" firstAttribute="leading" secondItem="Lki-vt-z3r" secondAttribute="leading" constant="135" id="MTU-NQ-jBo"/>
+                            <constraint firstItem="9ZF-G9-zSU" firstAttribute="centerX" secondItem="t07-uk-OZZ" secondAttribute="centerX" id="QQV-18-sxj"/>
+                            <constraint firstItem="fWY-Sq-LRH" firstAttribute="top" secondItem="9ZF-G9-zSU" secondAttribute="bottom" constant="60" id="WZg-zj-nnX"/>
+                            <constraint firstItem="0rc-2c-IFa" firstAttribute="top" secondItem="fWY-Sq-LRH" secondAttribute="bottom" constant="35" id="XMx-a7-z85"/>
+                            <constraint firstItem="jeq-4i-hoA" firstAttribute="leading" secondItem="Lki-vt-z3r" secondAttribute="leading" constant="145" id="bXh-8F-sVx"/>
+                            <constraint firstItem="Lki-vt-z3r" firstAttribute="trailing" secondItem="0rc-2c-IFa" secondAttribute="trailing" constant="40" id="y4S-Wt-FP9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lki-vt-z3r"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A92-Xm-cAa"/>
+                    <connections>
+                        <outlet property="choreLabel" destination="9ZF-G9-zSU" id="vWo-TT-rUH"/>
+                        <outlet property="loginButton" destination="Q0S-Ur-KDV" id="PDd-5Y-nuy"/>
+                        <outlet property="passwordLabel" destination="jeq-4i-hoA" id="guQ-yH-N2l"/>
+                        <outlet property="passwordTextField" destination="ejJ-nJ-LG0" id="Kh1-O4-18f"/>
+                        <outlet property="userNameLabel" destination="fWY-Sq-LRH" id="EZ0-Mt-JIL"/>
+                        <outlet property="userNameTextField" destination="0rc-2c-IFa" id="Vip-po-FZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8w-r5-FYR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2250.7246376811595" y="-1771.2053571428571"/>
         </scene>
         <!--Chore Table View Controller-->
         <scene sceneID="7yh-37-7pp">

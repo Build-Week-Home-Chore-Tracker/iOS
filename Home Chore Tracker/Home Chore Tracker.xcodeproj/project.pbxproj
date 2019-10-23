@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		77384074235E6C2A0035D18E /* ChoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77384073235E6C2A0035D18E /* ChoreDetailViewController.swift */; };
 		77384076235E6C520035D18E /* ChoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77384075235E6C520035D18E /* ChoreTableViewCell.swift */; };
 		7738407A235F5BBD0035D18E /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77384079235F5BBC0035D18E /* Nunito-ExtraBold.ttf */; };
+		84F95F422360082A005FB632 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F95F412360082A005FB632 /* LoginViewController.swift */; };
 		B41D3101EBA3FF779EC33CA0 /* Pods_Home_Chore_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A25F9C62F2EBCABBBFC9AB /* Pods_Home_Chore_Tracker.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		77384075235E6C520035D18E /* ChoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreTableViewCell.swift; sourceTree = "<group>"; };
 		77384079235F5BBC0035D18E /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
 		8353C4A1FB60CF2C78F92821 /* Pods-Home Chore Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home Chore Tracker.release.xcconfig"; path = "Target Support Files/Pods-Home Chore Tracker/Pods-Home Chore Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		84F95F412360082A005FB632 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D4A25F9C62F2EBCABBBFC9AB /* Pods_Home_Chore_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Home_Chore_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED243A662005FBFC35E71823 /* Pods-Home Chore Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home Chore Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Home Chore Tracker/Pods-Home Chore Tracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				590E4F1F235E42DC008FD030 /* PointsViewController.swift */,
 				77384071235E6BE90035D18E /* ChoreTableViewController.swift */,
 				77384073235E6C2A0035D18E /* ChoreDetailViewController.swift */,
+				84F95F412360082A005FB632 /* LoginViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F95F422360082A005FB632 /* LoginViewController.swift in Sources */,
 				7738406A235E5B0E0035D18E /* CoreDataStack.swift in Sources */,
 				77384074235E6C2A0035D18E /* ChoreDetailViewController.swift in Sources */,
 				590E4F20235E42DD008FD030 /* PointsViewController.swift in Sources */,

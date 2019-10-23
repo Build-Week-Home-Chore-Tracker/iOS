@@ -18,6 +18,7 @@ class ChoreDetailViewController: UIViewController {
     var user: UserRepresentation?
     var child: ChildRepresentation?
     let starImage = UIImage(named: "StarPoints")
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,12 +53,7 @@ class ChoreDetailViewController: UIViewController {
         
         switch points {
         case 1:
-            points == 1
-            let iV = UIImageView(image: starImage)
-            iV.translatesAutoresizingMaskIntoConstraints = false
-            iV.centerXAnchor.constraint(equalTo: doneButton.centerXAnchor).isActive = true
-            iV.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant:  8).isActive = true
-            view.addSubview(iV)
+            oneStar()
         case 2:
             points == 2
             let iV = UIImageView(image: starImage)
@@ -157,6 +153,135 @@ class ChoreDetailViewController: UIViewController {
             
         }
         
+    }
+    
+    func oneStar() {
+        let iV = UIImageView(image: starImage)
+        let iV2 = UIImageView(image: starImage)
+        let iV3 = UIImageView(image: starImage)
+        let iV4 = UIImageView(image: starImage)
+        let iV5 = UIImageView(image: starImage)
+        iV.translatesAutoresizingMaskIntoConstraints = false
+        iV2.translatesAutoresizingMaskIntoConstraints = false
+        iV3.translatesAutoresizingMaskIntoConstraints = false
+        iV4.translatesAutoresizingMaskIntoConstraints = false
+        iV5.translatesAutoresizingMaskIntoConstraints = false
+        iV.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV.leadingAnchor.constraint(equalToSystemSpacingAfter: doneButton.centerXAnchor, multiplier: -4).isActive = true
+        iV.trailingAnchor.constraint(equalToSystemSpacingAfter: doneButton.centerXAnchor, multiplier: 4).isActive = true
+        iV2.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV2.leadingAnchor.constraint(equalTo: iV.leadingAnchor, constant: -8).isActive = true
+        iV2.trailingAnchor.constraint(equalTo: iV.leadingAnchor).isActive = true
+        iV3.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV3.leadingAnchor.constraint(equalTo: iV.trailingAnchor).isActive = true
+        iV3.trailingAnchor.constraint(equalTo: iV.trailingAnchor, constant: 8).isActive = true
+        iV4.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV4.leadingAnchor.constraint(equalTo: iV2.leadingAnchor, constant: -8).isActive = true
+        iV4.trailingAnchor.constraint(equalTo: iV2.leadingAnchor).isActive = true
+        iV5.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV5.leadingAnchor.constraint(equalTo: iV3.trailingAnchor).isActive = true
+        iV5.trailingAnchor.constraint(equalTo: iV3.trailingAnchor, constant: 8).isActive = true
+        view.addSubview(iV)
+        view.addSubview(iV2)
+        view.addSubview(iV3)
+        view.addSubview(iV4)
+        view.addSubview(iV5)
+    }
+    
+    func twoStars() {
+        let iV = UIImageView(image: starImage)
+        let iV2 = UIImageView(image: starImage)
+        iV.translatesAutoresizingMaskIntoConstraints = false
+        iV2.translatesAutoresizingMaskIntoConstraints = false
+        iV.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV.leadingAnchor.constraint(equalTo: doneButton.centerXAnchor, constant: -8).isActive = true
+        iV.trailingAnchor.constraint(equalTo: doneButton.centerXAnchor).isActive = true
+        iV2.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV2.leadingAnchor.constraint(equalTo: doneButton.centerXAnchor).isActive = true
+        iV2.trailingAnchor.constraint(equalTo: doneButton.centerXAnchor, constant: 8).isActive = true
+        view.addSubview(iV)
+        view.addSubview(iV2)
+    }
+    
+    func threeStars() {
+        let iV = UIImageView(image: starImage)
+        let iV2 = UIImageView(image: starImage)
+        let iV3 = UIImageView(image: starImage)
+        iV.translatesAutoresizingMaskIntoConstraints = false
+        iV2.translatesAutoresizingMaskIntoConstraints = false
+        iV3.translatesAutoresizingMaskIntoConstraints = false
+        iV.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV.leadingAnchor.constraint(equalToSystemSpacingAfter: doneButton.centerXAnchor, multiplier: -4).isActive = true
+        iV.trailingAnchor.constraint(equalToSystemSpacingAfter: doneButton.centerXAnchor, multiplier: 4).isActive = true
+        iV2.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV2.leadingAnchor.constraint(equalTo: iV.leadingAnchor, constant: -8).isActive = true
+        iV2.trailingAnchor.constraint(equalTo: iV.leadingAnchor).isActive = true
+        iV3.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV3.leadingAnchor.constraint(equalTo: iV.trailingAnchor).isActive = true
+        iV3.trailingAnchor.constraint(equalTo: iV.trailingAnchor, constant: 8).isActive = true
+        view.addSubview(iV)
+        view.addSubview(iV2)
+        view.addSubview(iV3)
+    }
+    
+    func fourStars() {
+        let iV = UIImageView(image: starImage)
+        let iV2 = UIImageView(image: starImage)
+        let iV3 = UIImageView(image: starImage)
+        let iV4 = UIImageView(image: starImage)
+        iV.translatesAutoresizingMaskIntoConstraints = false
+        iV2.translatesAutoresizingMaskIntoConstraints = false
+        iV3.translatesAutoresizingMaskIntoConstraints = false
+        iV4.translatesAutoresizingMaskIntoConstraints = false
+        iV.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV.leadingAnchor.constraint(equalTo: doneButton.centerXAnchor, constant: -8).isActive = true
+        iV.trailingAnchor.constraint(equalTo: doneButton.centerXAnchor).isActive = true
+        iV2.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV2.leadingAnchor.constraint(equalTo: doneButton.centerXAnchor).isActive = true
+        iV2.trailingAnchor.constraint(equalTo: doneButton.centerXAnchor, constant: 8).isActive = true
+        iV3.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV3.leadingAnchor.constraint(equalTo: iV.leadingAnchor, constant: -8).isActive = true
+        iV3.trailingAnchor.constraint(equalTo: iV.leadingAnchor).isActive = true
+        iV4.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV4.leadingAnchor.constraint(equalTo: iV2.trailingAnchor).isActive = true
+        iV4.trailingAnchor.constraint(equalTo: iV2.trailingAnchor, constant: 8).isActive = true
+        view.addSubview(iV)
+        view.addSubview(iV2)
+        view.addSubview(iV3)
+        view.addSubview(iV4)
+    }
+    
+    func fiveStars() {
+        let iV = UIImageView(image: starImage)
+        let iV2 = UIImageView(image: starImage)
+        let iV3 = UIImageView(image: starImage)
+        let iV4 = UIImageView(image: starImage)
+        let iV5 = UIImageView(image: starImage)
+        iV.translatesAutoresizingMaskIntoConstraints = false
+        iV2.translatesAutoresizingMaskIntoConstraints = false
+        iV3.translatesAutoresizingMaskIntoConstraints = false
+        iV4.translatesAutoresizingMaskIntoConstraints = false
+        iV5.translatesAutoresizingMaskIntoConstraints = false
+        iV.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV.leadingAnchor.constraint(equalToSystemSpacingAfter: doneButton.centerXAnchor, multiplier: -4).isActive = true
+        iV.trailingAnchor.constraint(equalToSystemSpacingAfter: doneButton.centerXAnchor, multiplier: 4).isActive = true
+        iV2.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV2.leadingAnchor.constraint(equalTo: iV.leadingAnchor, constant: -8).isActive = true
+        iV2.trailingAnchor.constraint(equalTo: iV.leadingAnchor).isActive = true
+        iV3.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV3.leadingAnchor.constraint(equalTo: iV.trailingAnchor).isActive = true
+        iV3.trailingAnchor.constraint(equalTo: iV.trailingAnchor, constant: 8).isActive = true
+        iV4.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV4.leadingAnchor.constraint(equalTo: iV2.leadingAnchor, constant: -8).isActive = true
+        iV4.trailingAnchor.constraint(equalTo: iV2.leadingAnchor).isActive = true
+        iV5.topAnchor.constraint(equalTo: doneButton.bottomAnchor, constant: 8).isActive = true
+        iV5.leadingAnchor.constraint(equalTo: iV3.trailingAnchor).isActive = true
+        iV5.trailingAnchor.constraint(equalTo: iV3.trailingAnchor, constant: 8).isActive = true
+        view.addSubview(iV)
+        view.addSubview(iV2)
+        view.addSubview(iV3)
+        view.addSubview(iV4)
+        view.addSubview(iV5)
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
